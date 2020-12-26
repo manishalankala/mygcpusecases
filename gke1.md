@@ -126,3 +126,11 @@ EXPOSE 80
 CMD ["python", "app.py"]
 
 ```
+
+
+
+Expose the deployment.
+On the Deployment details page, click Expose.
+Set the Service type to Load balancer.
+Click Expose.
+Confirm by clicking the External endpoints IP address.
