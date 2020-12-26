@@ -39,6 +39,9 @@ if __name__ == "__main__":
 
 
 
+
+config.yaml
+
 ```
 apiVersion: extensions/v1beta1
 kind: Deployment
@@ -101,6 +104,11 @@ status:
 
 
 
+
+
+
+dockerfile
+
 ```
 # The Dockerfile defines the image's environment
 # Import Python runtime and set up working directory
@@ -116,7 +124,5 @@ EXPOSE 80
 
 # Run app.py when the container launches
 CMD ["python", "app.py"]
-
-
 
 ```
