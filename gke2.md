@@ -103,6 +103,10 @@ gcloud container clusters create gke-cluster1 --num-nodes=4
 ![image](https://user-images.githubusercontent.com/33985509/103161834-22659700-47e8-11eb-9fad-0d5b24326a0c.png)
 
 
+![image](https://user-images.githubusercontent.com/33985509/103161838-4d4feb00-47e8-11eb-85cf-82fd49247173.png)
+
+
+
 gcloud container clusters get-credentials gke-cluster1
 
 
@@ -119,6 +123,8 @@ ValidationError: missing required field “selector” in io.k8s.api.v1.Deployme
 
 next steps
 
+----------------------------------------------------------------------------------------------------
+
 kubectl expose deployment rolling --type=LoadBalancer --name=rolling-service --port=80 --target-port=80
 
 kubectl get services rolling-service
@@ -130,4 +136,4 @@ then make changes in the deploy.yaml file to rolling-v2
 kubectl apply -f deploy-rolling.yaml
 
 
-![image](https://user-images.githubusercontent.com/33985509/103161838-4d4feb00-47e8-11eb-85cf-82fd49247173.png)
+
