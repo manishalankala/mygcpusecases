@@ -92,10 +92,39 @@ CMD ["python", "app.py"]
 
 gcloud config set compute/zone us-central1-a
 
+
+
 gcloud container clusters create gke-cluster1 --num-nodes=4
 
 
 ![image](https://user-images.githubusercontent.com/33985509/103161808-a703e580-47e7-11eb-8dbc-1245918f228d.png)
 
 
+![image](https://user-images.githubusercontent.com/33985509/103161834-22659700-47e8-11eb-9fad-0d5b24326a0c.png)
 
+
+gcloud container clusters get-credentials gke-cluster1
+
+
+
+
+
+Need to check finding error
+
+no matches for kind “Deployment” in version "extensions/v1beta1
+
+ValidationError: missing required field “selector” in io.k8s.api.v1.DeploymentSpec
+
+
+
+next steps
+
+kubectl expose deployment rolling --type=LoadBalancer --name=rolling-service --port=80 --target-port=80
+
+kubectl get services rolling-service
+
+
+then make changes in the deploy.yaml file to rolling-v2
+
+
+kubectl apply -f deploy-rolling.yaml
