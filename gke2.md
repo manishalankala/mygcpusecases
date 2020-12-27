@@ -95,7 +95,5 @@ gcloud config set compute/zone us-central1-a
 gcloud container clusters create gke-cluster1 --num-nodes=4
 
 
-![image](https://user-images.githubusercontent.com/33985509/103161786-35c43280-47e7-11eb-8273-5fbd6e7108c2.png)
-
-
+![image](https://user-images.githubusercontent.com/33985509/103161808-a703e580-47e7-11eb-8dbc-1245918f228d.png)
 
