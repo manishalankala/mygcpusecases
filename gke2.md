@@ -128,3 +128,6 @@ then make changes in the deploy.yaml file to rolling-v2
 
 
 kubectl apply -f deploy-rolling.yaml
+
+
+![image](https://user-images.githubusercontent.com/33985509/103161838-4d4feb00-47e8-11eb-85cf-82fd49247173.png)
