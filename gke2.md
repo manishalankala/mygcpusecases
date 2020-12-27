@@ -5,11 +5,13 @@ rolling update
 
 Go to Kubernetes cluster
 
-Create cluster
+
 
 go to CLOUD SHELL
 
 
+
+create below files 
 
 
 app.py
