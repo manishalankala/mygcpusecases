@@ -109,7 +109,7 @@ gcloud container clusters get-credentials gke-cluster1
 
 
 
-Need to check finding error
+# Need to check finding error
 
 no matches for kind “Deployment” in version "extensions/v1beta1
 
