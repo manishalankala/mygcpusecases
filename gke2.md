@@ -67,5 +67,33 @@ spec:
 ```
 
 
+dockerfile
+
+```
+# The Dockerfile defines the image's environment
+# Import Python runtime and set up working directory
+FROM python:3.7-slim
+WORKDIR /app
+ADD . /app
+
+# Install any necessary dependencies
+RUN pip install -r requirements.txt
+
+# Open port 80 for serving the webpage
+EXPOSE 80
+
+# Run app.py when the container launches
+CMD ["python", "app.py"]
+
+
+```
+
+gcloud config set compute/zone us-central1-a
+
+gcloud container clusters create gke-cluster1 --num-nodes=4
+
+
+![image](https://user-images.githubusercontent.com/33985509/103161786-35c43280-47e7-11eb-8273-5fbd6e7108c2.png)
+
 
 
